@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+}
+
+.screen{
+
+    background-image: url("./pizza.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width:100vw;
+    height:100vh;
+}
+
+.heading{
+
+    margin-left:20px;
+    padding-top:20px;
+
+    font-size:90px;
+    font-weight:900;
+    font-style:italic;
+
+    color:white;
+}
+
+.tagline{
+
+    margin-left:20px;
+
+    font-size:24px;
+
+    color:rgb(230,230,230);
+
+    font-style:italic;
+
+    font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
+}
+
+.card{
+
+    margin-left:20px;
+    margin-top:45px;
+
+    width:260px;
+
+    background:white;
+
+    border-radius:16px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+
+    overflow:hidden;
+}
+
+.img2{
+
+    width:100%;
+    height:190px;
+
+    object-fit:cover;
+}
+
+.cta{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px;
+}
+
+.price{
+
+    border:1px solid rgb(146,95,1);
+
+    color:rgb(146,95,1);
+
+    padding:8px 12px;
+
+    border-radius:6px;
+
+    font-weight:bold;
+}
+
+.orderNow{
+
+    background:rgb(165,0,0);
+
+    color:white;
+
+    padding:10px 16px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    transition:.25s;
+    border: 1px solid transparent;
+}
+
+.orderNow:hover{
+
+    background:white;
+
+    color:rgb(165,0,0);
+
+    border:1px solid rgb(165,0,0);
+
+}
+
+.status{
+
+    margin:0 15px 15px;
+
+    padding:14px;
+
+    background:rgb(247,247,247);
+
+    border:1px solid rgb(225,225,225);
+
+    border-radius:10px;
+}
+
+.statusLabel{
+
+    font-size:12px;
+
+    font-weight:700;
+
+    color:rgb(130,130,130);
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    margin-bottom:8px;
+}
+
+.statusValue{
+
+    font-size:22px;
+
+    font-weight:600;
+
+    color:gray;
+
+    transition:0.3s;
+}
+
+.orderPlaced{
+    color: rgb(165,0,0);
+}
+
+.preparing{
+    color: rgb(254, 177, 114);
+}
+
+.cheese{
+    color: rgb(211, 211, 92);
+}
+
+.baking{
+    color: rgb(220,90,20);
+}
+
+.ready{
+    color: green;
+}
