@@ -5,38 +5,157 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    color: #222;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #0b1120;
+    color: #e5e7eb;
+    min-height: 100vh;
 }
+
+
+/* Main container */
 
 .container {
     width: 90%;
-    max-width: 1000px;
-    margin: 40px auto;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 70px 0;
 }
+
+
+/* Header */
 
 .header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 55px;
 }
 
 .header h1 {
-    margin-bottom: 8px;
+    font-size: 48px;
+    font-weight: 750;
+    letter-spacing: -1.5px;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #94a3b8
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .header p {
-    color: #666;
+    margin-top: 12px;
+    font-size: 17px;
+    color: #94a3b8;
 }
+
+
+/* Posts grid */
 
 .posts-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 24px;
 }
 
+
+/* Post card */
+
+.post-card {
+    position: relative;
+
+    padding: 28px;
+
+    background: rgba(17, 24, 39, 0.85);
+
+    border: 1px solid rgba(148, 163, 184, 0.12);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.03);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Card hover */
+
+.post-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(96, 165, 250, 0.35);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.35),
+        0 0 25px rgba(59, 130, 246, 0.08);
+}
+
+
+/* Post ID */
+
+.post-id {
+    display: inline-block;
+
+    margin-bottom: 16px;
+
+    padding: 5px 10px;
+
+    border-radius: 999px;
+
+    background: rgba(59, 130, 246, 0.12);
+
+    color: #60a5fa;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* Post title */
+
+.post-title {
+    margin-bottom: 14px;
+
+    color: #f8fafc;
+
+    font-size: 22px;
+    line-height: 1.35;
+
+    text-transform: capitalize;
+}
+
+
+/* Post body */
+
+.post-body {
+    color: #94a3b8;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* Mobile */
+
 @media (max-width: 700px) {
+
+    .container {
+        padding: 45px 0;
+    }
+
+    .header h1 {
+        font-size: 38px;
+    }
+
     .posts-container {
         grid-template-columns: 1fr;
     }
+
 }
