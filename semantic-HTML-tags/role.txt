@@ -1,0 +1,23 @@
+19. The most important distinction
+
+Don't memorize semantic tags as arbitrary replacements for <div>.
+
+Instead, ask:
+
+"What does this content represent?"
+Content	Appropriate element
+Main page content	<main>
+Navigation links	<nav>
+Introductory content	<header>
+Footer information	<footer>
+Thematically grouped content	<section>
+Independent piece of content	<article>
+Related/secondary content	<aside>
+Image + caption	<figure> + <figcaption>
+Date/time	<time>
+Contact information	<address>
+Expandable information	<details> + <summary>
+Strong importance	<strong>
+Emphasis	<em>
+Generic block container	<div>
+Generic inline container	<span>

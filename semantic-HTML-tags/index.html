@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Practical articles about JavaScript, web development, APIs, React and software engineering."
+    >
+
+    <title>DevJournal — Practical Web Development</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- =========================
+         SITE HEADER
+    ========================== -->
+
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <a href="/" class="logo">
+                Dev<span>Journal</span>
+            </a>
+
+
+            <nav class="main-nav" aria-label="Main navigation">
+
+                <a href="/" class="active">Home</a>
+                <a href="#articles">Articles</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About</a>
+
+            </nav>
+
+
+            <a href="#newsletter" class="subscribe-button">
+                Subscribe
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         MAIN PAGE CONTENT
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             HERO / FEATURED ARTICLE
+        ========================== -->
+
+        <section class="hero">
+
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <p class="eyebrow">
+                        FEATURED ARTICLE
+                    </p>
+
+                    <h1>
+                        What Actually Happens When You Call
+                        <code>fetch()</code> in JavaScript?
+                    </h1>
+
+                    <p class="hero-description">
+                        Understanding the complete journey from a JavaScript
+                        function call to an HTTP response — including promises,
+                        the network layer, response bodies and JSON parsing.
+                    </p>
+
+
+                    <div class="article-meta">
+
+                        <div class="author">
+
+                            <div class="author-avatar">
+                                DK
+                            </div>
+
+                            <div>
+                                <strong>Divyanshu Kumar</strong>
+
+                                <p>
+                                    <time datetime="2026-08-10">
+                                        August 10, 2026
+                                    </time>
+                                    · 8 min read
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="#" class="read-button">
+                        Read article →
+                    </a>
+
+                </div>
+
+
+                <figure class="hero-image">
+
+                    <div class="code-window">
+
+                        <div class="window-header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>const response = await fetch(url);
+
+const data = await response.json();
+
+console.log(data);</code></pre>
+
+                    </div>
+
+                    <figcaption>
+                        A simplified view of a typical Fetch API workflow.
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTENT AREA
+        ========================== -->
+
+        <div class="container content-layout">
+
+
+            <!-- =========================
+                 PRIMARY CONTENT
+            ========================== -->
+
+            <div class="primary-content">
+
+
+                <section id="articles" class="articles-section">
+
+                    <div class="section-heading">
+
+                        <div>
+                            <p class="eyebrow">
+                                FROM THE BLOG
+                            </p>
+
+                            <h2>
+                                Latest articles
+                            </h2>
+                        </div>
+
+                        <a href="#">
+                            View all →
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- ARTICLE 1 -->
+
+                    <article class="article-card">
+
+                        <figure class="article-image javascript-image">
+
+                            <span>JAVASCRIPT</span>
+
+                        </figure>
+
+
+                        <div class="article-card-content">
+
+                            <div class="article-tags">
+
+                                <span>JavaScript</span>
+                                <span>Async</span>
+
+                            </div>
+
+
+                            <h3>
+                                <a href="#">
+                                    JavaScript Promises: The Mental Model
+                                    You Actually Need
+                                </a>
+                            </h3>
+
+
+                            <p>
+                                Stop memorizing promise methods and start
+                                understanding the state transitions, chaining
+                                and error propagation that make asynchronous
+                                JavaScript predictable.
+                            </p>
+
+
+                            <footer class="card-footer">
+
+                                <div class="small-author">
+
+                                    <div class="small-avatar">
+                                        DK
+                                    </div>
+
+                                    <div>
+                                        <strong>Divyanshu Kumar</strong>
+
+                                        <time datetime="2026-08-07">
+                                            Aug 7, 2026
+                                        </time>
+                                    </div>
+
+                                </div>
+
+                                <span>7 min read</span>
+
+                            </footer>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ARTICLE 2 -->
+
+                    <article class="article-card">
+
+                        <figure class="article-image api-image">
+
+                            <span>WEB DEVELOPMENT</span>
+
+                        </figure>
+
+
+                        <div class="article-card-content">
+
+                            <div class="article-tags">
+
+                                <span>APIs</span>
+                                <span>HTTP</span>
+
+                            </div>
+
+
+                            <h3>
+                                <a href="#">
+                                    HTTP Responses Explained: Headers,
+                                    Status Codes and Bodies
+                                </a>
+                            </h3>
+
+
+                            <p>
+                                An HTTP response contains much more than the
+                                data your frontend displays. Learn how status
+                                codes, headers and response bodies work together.
+                            </p>
+
+
+                            <footer class="card-footer">
+
+                                <div class="small-author">
+
+                                    <div class="small-avatar">
+                                        AR
+                                    </div>
+
+                                    <div>
+                                        <strong>Arjun Rao</strong>
+
+                                        <time datetime="2026-08-04">
+                                            Aug 4, 2026
+                                        </time>
+                                    </div>
+
+                                </div>
+
+                                <span>6 min read</span>
+
+                            </footer>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ARTICLE 3 -->
+
+                    <article class="article-card">
+
+                        <figure class="article-image react-image">
+
+                            <span>REACT</span>
+
+                        </figure>
+
+
+                        <div class="article-card-content">
+
+                            <div class="article-tags">
+
+                                <span>React</span>
+                                <span>Frontend</span>
+
+                            </div>
+
+
+                            <h3>
+                                <a href="#">
+                                    React State: When Should You Actually
+                                    Use useState?
+                                </a>
+                            </h3>
+
+
+                            <p>
+                                Not every changing value belongs in state.
+                                Learn how to distinguish state from ordinary
+                                variables, refs and derived values.
+                            </p>
+
+
+                            <footer class="card-footer">
+
+                                <div class="small-author">
+
+                                    <div class="small-avatar">
+                                        SM
+                                    </div>
+
+                                    <div>
+                                        <strong>Sarah Miller</strong>
+
+                                        <time datetime="2026-07-31">
+                                            Jul 31, 2026
+                                        </time>
+                                    </div>
+
+                                </div>
+
+                                <span>9 min read</span>
+
+                            </footer>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ARTICLE 4 -->
+
+                    <article class="article-card">
+
+                        <figure class="article-image backend-image">
+
+                            <span>BACKEND</span>
+
+                        </figure>
+
+
+                        <div class="article-card-content">
+
+                            <div class="article-tags">
+
+                                <span>Node.js</span>
+                                <span>Backend</span>
+
+                            </div>
+
+
+                            <h3>
+                                <a href="#">
+                                    From Browser to Database:
+                                    Understanding a Web Request
+                                </a>
+                            </h3>
+
+
+                            <p>
+                                Follow a request through the entire application
+                                stack and understand what your frontend,
+                                backend and database are actually doing.
+                            </p>
+
+
+                            <footer class="card-footer">
+
+                                <div class="small-author">
+
+                                    <div class="small-avatar">
+                                        DK
+                                    </div>
+
+                                    <div>
+                                        <strong>Divyanshu Kumar</strong>
+
+                                        <time datetime="2026-07-28">
+                                            Jul 28, 2026
+                                        </time>
+                                    </div>
+
+                                </div>
+
+                                <span>11 min read</span>
+
+                            </footer>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+            </div>
+
+
+
+            <!-- =========================
+                 SIDEBAR
+            ========================== -->
+
+            <aside class="sidebar">
+
+
+                <!-- ABOUT -->
+
+                <section class="sidebar-card">
+
+                    <p class="eyebrow">
+                        ABOUT
+                    </p>
+
+                    <h2>
+                        Engineering without the fluff.
+                    </h2>
+
+                    <p>
+                        DevJournal is a practical blog about JavaScript,
+                        frontend development, APIs and software engineering.
+                    </p>
+
+                    <a href="#about" class="text-link">
+                        More about us →
+                    </a>
+
+                </section>
+
+
+
+                <!-- CATEGORIES -->
+
+                <section id="categories" class="sidebar-card">
+
+                    <h2>
+                        Categories
+                    </h2>
+
+                    <ul class="category-list">
+
+                        <li>
+                            <a href="#">
+                                <span>JavaScript</span>
+                                <span>24</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <span>Web Development</span>
+                                <span>18</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <span>React</span>
+                                <span>15</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <span>Backend</span>
+                                <span>12</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <span>Computer Science</span>
+                                <span>9</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </section>
+
+
+
+                <!-- POPULAR POSTS -->
+
+                <section class="sidebar-card">
+
+                    <h2>
+                        Popular this month
+                    </h2>
+
+
+                    <ol class="popular-list">
+
+                        <li>
+
+                            <a href="#">
+                                <strong>
+                                    The JavaScript Event Loop
+                                    Explained Properly
+                                </strong>
+
+                                <span>
+                                    12 min read
+                                </span>
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="#">
+                                <strong>
+                                    REST APIs vs GraphQL:
+                                    What Should You Learn?
+                                </strong>
+
+                                <span>
+                                    8 min read
+                                </span>
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="#">
+                                <strong>
+                                    How Browser Rendering
+                                    Actually Works
+                                </strong>
+
+                                <span>
+                                    14 min read
+                                </span>
+                            </a>
+
+                        </li>
+
+                    </ol>
+
+                </section>
+
+            </aside>
+
+        </div>
+
+
+
+        <!-- =========================
+             NEWSLETTER
+        ========================== -->
+
+        <section id="newsletter" class="newsletter">
+
+            <div class="container newsletter-inner">
+
+                <div>
+
+                    <p class="eyebrow">
+                        STAY IN THE LOOP
+                    </p>
+
+                    <h2>
+                        One useful email. No noise.
+                    </h2>
+
+                    <p>
+                        Get practical software engineering articles
+                        delivered once a week.
+                    </p>
+
+                </div>
+
+
+                <form class="newsletter-form">
+
+                    <label for="email" class="visually-hidden">
+                        Email address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                    <button type="submit">
+                        Subscribe
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         SITE FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-inner">
+
+            <div>
+
+                <a href="/" class="logo">
+                    Dev<span>Journal</span>
+                </a>
+
+                <p>
+                    Practical software engineering for developers
+                    who want to understand how things actually work.
+                </p>
+
+            </div>
+
+
+            <nav aria-label="Footer navigation">
+
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">RSS</a>
+
+            </nav>
+
+
+            <address>
+                Contact:
+                <a href="mailto:hello@devjournal.com">
+                    hello@devjournal.com
+                </a>
+            </address>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

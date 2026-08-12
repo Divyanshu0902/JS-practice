@@ -1,0 +1,29 @@
+<body>
+
+ ├── <header>
+ │    ├── <h1>
+ │    ├── <p>
+ │    └── <nav>
+ │         ├── <a>
+ │         ├── <a>
+ │         └── <a>
+ │
+ ├── <main>
+ │
+ │    ├── <section>
+ │    │
+ │    │    ├── <h2>
+ │    │    │
+ │    │    ├── <article>
+ │    │    │    ├── <header>
+ │    │    │    ├── <figure>
+ │    │    │    ├── <p>
+ │    │    │    └── <footer>
+ │    │    │
+ │    │    └── <article>
+ │    │
+ │    └── <aside>
+ │
+ └── <footer>
+
+</body>
