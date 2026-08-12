@@ -1,0 +1,376 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f4f6f8;
+
+    color: #222;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 70px;
+
+    background: #111827;
+
+    color: white;
+}
+
+
+.header-container {
+    max-width: 1200px;
+
+    height: 100%;
+
+    margin: auto;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    font-size: 24px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    display: flex;
+
+    gap: 30px;
+}
+
+
+.navbar a {
+    color: #d1d5db;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: color 0.2s ease;
+}
+
+
+.navbar a:hover {
+    color: white;
+}
+
+
+/* =========================
+   SUBSCRIBE BUTTON
+========================= */
+
+.subscribe {
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+
+.subscribe:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.main {
+    max-width: 1200px;
+
+    min-height: calc(100vh - 70px);
+
+    margin: auto;
+
+    padding: 20px;
+
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    grid-template-rows: 1fr auto;
+
+    gap: 20px;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.aside {
+    height: fit-content;
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+
+.aside h2 {
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+.aside a {
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #eee;
+
+    color: #555;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+
+.aside a:hover {
+    color: #2563eb;
+}
+
+
+/* =========================
+   POSTS SECTION
+========================= */
+
+.section {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    align-content: start;
+}
+
+
+/* =========================
+   POST CARD
+========================= */
+
+.post-card {
+    background: white;
+
+    padding: 24px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e5e7eb;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.post-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   POST META
+========================= */
+
+.post-meta {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 16px;
+
+    font-size: 13px;
+
+    color: #6b7280;
+}
+
+
+.post-id {
+    font-weight: 600;
+
+    color: #2563eb;
+}
+
+
+.user-id {
+    color: #6b7280;
+}
+
+
+/* =========================
+   POST TITLE
+========================= */
+
+.post-card h2 {
+    font-size: 21px;
+
+    line-height: 1.35;
+
+    margin-bottom: 14px;
+
+    color: #111827;
+}
+
+
+/* =========================
+   POST BODY
+========================= */
+
+.post-card p {
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #4b5563;
+
+    /*
+        Preserve the line breaks
+        contained in the API response.
+    */
+
+    white-space: pre-line;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    grid-column: 1 / -1;
+
+    background: #111827;
+
+    color: #9ca3af;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+
+.footer p {
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Header */
+
+    .header {
+        height: auto;
+    }
+
+
+    .header-container {
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+
+    .navbar {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    /* Main */
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Sidebar */
+
+    .aside {
+        width: 100%;
+    }
+
+
+    /* Posts */
+
+    .section {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        grid-column: auto;
+    }
+}
